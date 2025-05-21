@@ -88,7 +88,7 @@ export default function Home() {
             <p className="font-normal h-4">김로켓님의 사주</p>
             <p className="font-bold text-xl h-5">1980년 8월27일 08:10</p>
           </div>
-          <div className="w-full flex justify-center items-center">
+          <div className="w-full flex justify-center items-center px-1">
             <div className="w-[310px] text-[12px] text-center">
               {/* 헤더 */}
               <div className="grid grid-cols-5 font-bold">
