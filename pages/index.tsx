@@ -3,6 +3,17 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="relative flex flex-col items-center justify-start min-h-screen bg-[#F3F2EF] text-black max-w-md mx-auto">
+      {/* 상단 검정 이미지 */}
+      <div className="w-full">
+        <Image
+          src="/top-black.png"
+          alt="상단 이미지"
+          width={448}
+          height={400}
+          className="absolute top-0 w-full object-cover"
+        />
+      </div>
+
       {/* 상단 이미지 */}
       <div className="w-full mb-25">
         <Image
@@ -10,13 +21,24 @@ export default function Home() {
           alt="상단 이미지"
           width={448}
           height={400}
-          className="w-full min-h-[306px] h-[auto] object-cover"
+          className="w-full min-h-[306px] object-cover"
         />
       </div>
 
       {/*텍스트1*/}
-      <div className="absolute top-3/10 left-1/25 px-10 pt-5 bg-[url('/speechbubble1.png')] object-contain w-[215px] h-[139px] flex items-center text-center justify-center">
+      <div className="z-10 absolute top-[27.5%] left-1/25 px-10 pt-5 bg-[url('/speechbubble1.png')] object-contain w-[215px] h-[139px] flex items-center text-center justify-center">
         이제 본격적으로 OO님의 사주팔자를 분석해볼 차례네요.
+      </div>
+
+      {/* 상단 경계 이미지 */}
+      <div className="w-full">
+        <Image
+          src="/top-yellow.png"
+          alt="상단 이미지"
+          width={375}
+          height={195}
+          className="absolute top-26/100 w-full object-cover"
+        />
       </div>
 
       {/* 가운데 이미지 */}
@@ -31,8 +53,19 @@ export default function Home() {
       </div>
 
       {/*텍스트2*/}
-      <div className="absolute top-50/100 left-1/25 px-8.5 pb-3 bg-[url('/speechbubble2.png')] object-contain w-[239px] h-[138.78px] flex items-center text-center justify-center">
+      <div className="absolute top-1/2 left-1/25 px-8.5 pb-3 bg-[url('/speechbubble2.png')] object-contain w-[239px] h-[138.78px] flex items-center text-center justify-center">
         제가 OO님의 사주를 보기 쉽게 표로 정리했어요
+      </div>
+
+      {/* 하단 경계 이미지 */}
+      <div className="w-full">
+        <Image
+          src="/bottom-yellow.png"
+          alt="상단 이미지"
+          width={375}
+          height={195}
+          className="absolute top-[66%] w-full object-cover z-5"
+        />
       </div>
 
       {/* 하단 이미지 */}
@@ -47,7 +80,7 @@ export default function Home() {
       </div>
 
       {/* 사주  */}
-      <div className="absolute z-1 bg-[#F3F2EC]  top-7/10 left-[12x] border-3 w-[full] max-w-[351px] flex items-center text-center justify-center m-auto">
+      <div className="absolute z-10 bg-[#F3F2EC]  top-7/10 left-[12x] border-3 w-[full] max-w-[351px] flex items-center text-center justify-center m-auto">
         <div className="relative w-full h-full  text-align  ">
           <Image
             src="/sajuline.png"
