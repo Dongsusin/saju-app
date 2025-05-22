@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col items-center justify-start min-h-screen bg-[#F3F2EF] text-black max-w-md mx-auto">
+    <main className="relative flex flex-col items-center justify-start min-h-[2180px] bg-[#F3F2EF] text-black max-w-md mx-auto">
       {/* 상단 검정 이미지 */}
       <div className="w-full">
         <Image
@@ -10,7 +10,7 @@ export default function Home() {
           alt="상단 이미지"
           width={448}
           height={400}
-          className="absolute top-0 w-full object-cover"
+          className="absolute top-0 w-full min-h-[310px] object-cover"
         />
       </div>
 
@@ -21,7 +21,7 @@ export default function Home() {
           alt="상단 이미지"
           width={448}
           height={400}
-          className="w-full min-h-[306px] object-cover"
+          className="w-full min-h-[778px] object-cover"
         />
       </div>
 
@@ -37,7 +37,7 @@ export default function Home() {
           alt="상단 이미지"
           width={375}
           height={195}
-          className="absolute top-26/100 w-full object-cover"
+          className="absolute top-26/100 w-full min-h-[230px] object-cover"
         />
       </div>
 
@@ -48,7 +48,7 @@ export default function Home() {
           alt="가운데 이미지"
           width={351}
           height={200}
-          className="w-full max-w-[351px] object-cover"
+          className="w-full max-w-[351px] min-h-[285px] object-cover"
         />
       </div>
 
@@ -64,7 +64,7 @@ export default function Home() {
           alt="상단 이미지"
           width={375}
           height={195}
-          className="absolute top-[66%] w-full object-cover z-5"
+          className="absolute top-[66%] w-full min-h-[140px] object-cover z-5"
         />
       </div>
 
@@ -75,7 +75,7 @@ export default function Home() {
           alt="하단 이미지"
           width={448}
           height={306}
-          className="w-full min-h-[306px] h-[auto] object-cover"
+          className="w-full h-[auto] min-h-[365px] object-cover"
         />
       </div>
 
